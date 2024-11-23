@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xizmatlar</title>
+    <link rel="shortcut icon" href="./logo-letter-z-glitch-distortion-vector-22855396.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#ca8a04;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    margin-top: 80px;
+}
+
+
+.info-box {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    border: 2px solid var(--primary-color);
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.info-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.info-box h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 1rem;
+}
+
+.info-box a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    color: rgba(102, 102, 102, 0.579);
+}
+@media (max-width: 979px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-box{
+        width: 100%;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media (max-width: 323px){
+    .info-box{
+        overflow: scroll;
+
+    }
+}
+a{
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    color: black;
+    z-index: 99;
+}
+.nav-content{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+nav .logo a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: .3s;
+    filter: blur(0px);
+    cursor: wait;
+}
+nav .logo a:hover{
+    color:var(--primary-color);
+    filter: blur(0px);
+}
+nav .checkbox{
+    display: none;
+    filter: blur(0px);
+}
+nav input{
+    display: none;
+    filter: blur(0px);
+}
+.nav .checkbox i{
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    filter: blur(0px);
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+    filter: blur(0px);
+}
+ul li a{
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+    filter: blur(0px);
+}
+ul li a:hover{
+border-top-color: var(--secondary-color);
+border-bottom-color: var(--secondary-color);
+color: #ca8a04;
+filter: blur(0px);
+}
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+nav.dark-mode {
+    background-color: black;
+}
+
+nav.dark-mode ul li a  .fa-bars-staggered {
+    color: black;
+}
+
+.dark-mode .about-color {
+    background-color: black;
+}
+.contact {
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.contact h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid ;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background: #555;
+}
+.socials .fa-telegram{
+    color: rgb(91, 91, 255);
+   font-size: 23px;
+}
+.socials .fa-instagram{
+    color: rgb(157, 51, 69);
+    font-size: 23px;
+    padding-left: 5px;
+}
+.assi{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+</style>
+<nav>
+    <div class="nav-content">
+        <div class="logo">
+            <a href="zafarbekboltayev.github.io/Portfolio/"><i class="fa-solid fa-z"></i><i class="fa-solid fa-a"></i><i class="fa-solid fa-f"></i><i class="fa-solid fa-a"></i><i class="fa-solid fa-r"></i><i class="fa-solid fa-b"></i><i class="fa-solid fa-e"></i><i class="fa-solid fa-k"></i></a>
+        </div>
+        <label for="check" class="checkbox">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </label>
+        <input type="checkbox" name="check" id="check">
+        <ul>
+            
+            <i class="fa-solid fa-moon" id="icon"></i>
+        </ul>
+    </div>
+</nav>
+<section class="contact-info">
+    <div class="info-box" id="phone">
+        <h3>Telefon raqam</h3>
+        <p><a href="tel:+998991205171">+998-99-120-51-71</a></p>
+    </div>
+    <div class="info-box" id="email">
+        <h3>Email</h3>
+        <p><a href="mailto:zafarbekboltayev903@gmail.com">zafarbekboltayev903@gmail.com</a></p>
+    </div>
+    <div class="info-box" id="address">
+        <h3>Manzil</h3>
+        <p>O'zbekiston respublikasi , Xiva shaxri</p>
+    </div>
+</section>
+<section class="contact" id="habar">
+    <h2 class="translatable" data-key="contact">Bog'lanish</h2>
+    <div>
+        <form action="https://getform.io/f/bejjejxa" method="POST" id="form">
+        <label for="name" class="translatable" data-key="name">Ismingiz:</label>
+        <input type="text" name="name">
+        <label for="email" class="translatable" data-key="email">Emailigiz:</label>
+        <input type="email" name="email">
+        <label for="message" class="translatable" data-key="message">Habar qoldiring:</label>
+        <input type="text" name="message">
+        <input type="hidden" name="_gotcha" style="display:none !important">
+        <div class="assi">
+        <button type="submit" class="translatable" data-key="submit">Yuborish</button>
+    </form>
+    <div class="socials">
+        <a href="https://t.me/Zafarbek_5171"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.instagram.com/capitan.dev/"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</div>
+</section>
+<script>
+window.addEventListener("load", function() {
+    const infoBoxes = document.querySelectorAll(".info-box");
+
+    infoBoxes.forEach((box, index) => {
+        setTimeout(() => {
+            box.classList.add("visible");
+        }, index * 300);
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const icon = document.getElementById('icon');
+    const body = document.body;
+
+    icon.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+
+        if (body.classList.contains('dark-mode')) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        }
+    });
+});
+
+</script>
+</body>
+</html>
