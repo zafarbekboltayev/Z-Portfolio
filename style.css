@@ -3,7 +3,9 @@ body{
     font-family: 'poppins' ,sans-serif ;
    
 }
-
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --primary-color:#ca8a04;
     --primary-color-dark:#9333ea;
